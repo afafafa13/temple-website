@@ -3,6 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>覺修宮｜首頁</title>
+  
+<style>
+  .slideshow {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .slideshow img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+</style>
+  
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // 3秒換一張
+  }
+</script>
+
+
+
+
+  
+  
   <style>
     body {
       font-family: "微軟正黑體", sans-serif;
