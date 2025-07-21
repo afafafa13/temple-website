@@ -2,75 +2,50 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>覺修宮</title>
+  <title>覺修宮｜首頁</title>
 
-  <!-- Google Fonts 繁體字型 -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome 圖示 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     body {
-      font-family: 'Noto Serif TC', serif;
+      font-family: "微軟正黑體", sans-serif;
+      background-color: #fff8e1;
       margin: 0;
-      background-color: #fff;
-      color: #333;
+      padding: 0;
     }
-
     header {
-      background-color: #f5f5f5;
-      padding: 30px 0;
+      background-color: #b71c1c;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-
-    h1 {
-      font-size: 52px;
-      margin: 0;
-      color: #222;
-    }
-
     nav {
-      background-color: #eeeeee;
-      padding: 15px 0;
+      background-color: #d32f2f;
       text-align: center;
     }
-
     nav a {
-      margin: 0 20px;
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
       text-decoration: none;
-      color: #444;
-      font-weight: bold;
-      font-size: 18px;
     }
-
     nav a:hover {
-      color: #007BFF;
+      background-color: #b71c1c;
     }
-
-    .facebook-icon {
-      font-size: 28px;
-      color: #3b5998;
-      margin-left: 15px;
-      vertical-align: middle;
+    .container {
+      padding: 20px;
     }
-
-    main {
-      padding: 30px;
+    footer {
+      background-color: #eee;
+      color: #333;
       text-align: center;
+      padding: 10px;
     }
-
-    .carousel {
-      margin: 30px auto;
-      max-width: 600px;
-      height: 300px;
-      background-color: #ccc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      color: #666;
+    /* Facebook icon style */
+    .social-icon {
+      color: #3b5998;
+      margin-left: 10px;
     }
   </style>
 </head>
@@ -78,26 +53,34 @@
 
   <header>
     <h1>覺修宮</h1>
-    <a href="https://www.facebook.com/你的粉專網址" target="_blank">
-      <i class="fab fa-facebook-square facebook-icon"></i>
-    </a>
+    <p>信眾安身立命的精神依靠</p>
   </header>
 
   <nav>
-    <a href="#">首頁</a>
-    <a href="#">關於我們</a>
-    <a href="#">最新消息</a>
-    <a href="#">聯絡方式</a>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="rituals.html">參拜流程</a>
+    <a href="news.html">最新消息</a>
+    <a href="contact.html">聯絡我們</a>
+    <!-- Facebook icon link -->
+    <a href="https://www.facebook.com/profile.php?id=61560991443501" target="_blank">
+      <i class="fab fa-facebook fa-2x social-icon"></i>
+    </a>
   </nav>
+  
+  <div class="container">
+    <h2>歡迎來到覺修宮</h2>
+    <p>本宮秉持傳統信仰，弘揚善道，廣納善緣，護佑眾生。</p>
+    <img src="images/main-hall.jpg" alt="主殿照片" width="70%">
+  </div>
 
-  <main>
-    <div class="carousel">
-      <!-- 輪播圖區塊（你可以放圖片） -->
-      輪播圖片區塊
-    </div>
-
-    <p>歡迎蒞臨覺修宮！本宮主祀地藏王菩薩，祈求眾生離苦得樂，善緣增長。</p>
-  </main>
+  <footer>
+    &copy; 2025 覺修宮 All rights reserved.
+    <br>
+    <a href="https://www.facebook.com/profile.php?id=61560991443501" target="_blank">
+      <i class="fab fa-facebook fa-2x social-icon"></i>
+    </a>
+  </footer>
 
 </body>
 </html>
