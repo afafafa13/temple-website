@@ -1,124 +1,101 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
+<!DOCTYPE html> <!-- 宣告文件類型為 HTML5 -->
+<html lang="zh-Hant"> <!-- 設定語言為繁體中文 -->
 <head>
-  <meta charset="UTF-8">
-  <title>覺修宮｜首頁</title>
+  <meta charset="UTF-8"> <!-- 設定編碼為 UTF-8，支援中文顯示 -->
+  <title>覺修宮｜首頁</title> <!-- 網頁標題，會顯示在瀏覽器標籤上 -->
 
-  <!-- Font Awesome for Icons -->
+  <!-- 引入 Font Awesome 圖示庫，用於顯示社群圖示 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
+    /* 網頁整體字體與背景設定 */
     body {
-      font-family: "微軟正黑體", sans-serif;
-      background-color: #fff8e1;
+      font-family: "微軟正黑體", sans-serif; /* 使用微軟正黑體，提高中文可讀性 */
+      background-color: #fff8e1; /* 淡黃色背景，提高親切感 */
       margin: 0;
       padding: 0;
     }
 
+    /* 頁首樣式 */
     header {
-      background-color: #b71c1c;
+      background-color: #b71c1c; /* 深紅色背景，符合宮廟主色調 */
       color: white;
       padding: 20px;
-      text-align: center;
+      text-align: center; /* 文字置中 */
     }
 
+    /* 導覽列樣式 */
     nav {
-      background-color: #fcfcfc;
+      background-color: #fcfcfc; /* 導覽區背景顏色略淺 */
       text-align: center;
     }
-
     nav a {
-      color: #0a0a0a;
+      color: #0a0a0a; /* 黑色字體 */
       display: inline-block;
-      padding: 10px 20px;
-      text-decoration: none;
+      padding: 10px 20px; /* 導覽連結內距 */
+      text-decoration: none; /* 移除底線 */
     }
-
     nav a:hover {
-      background-color: #fcfafa;
+      background-color: #fcfafa; /* 滑鼠懸停時背景變化 */
     }
 
+    /* 主要內容區塊 */
     .container {
       padding: 20px;
-      max-width: 900px;
-      margin: auto;
     }
 
-    .main-img {
-      width: 70%;
-      height: auto;
-      max-height: 300px; /* ⭐ 控制主圖高度不過高 */
-      display: block;
-      margin: 0 auto;
-    }
-
-    .info-box {
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #fff3e0;
-      border: 1px solid #d7ccc8;
-      text-align: left; /* ⭐ 靠左對齊 */
-    }
-
+    /* 頁尾樣式 */
     footer {
-      background-color: #eee;
-      color: #333;
+      background-color: #eee; /* 淺灰背景 */
+      color: #333; /* 深灰字體 */
       text-align: center;
       padding: 10px;
     }
 
+    /* Facebook 圖示樣式 */
     .social-icon {
-      color: #3b5998;
-      margin-left: 10px;
+      color: #3b5998; /* Facebook 官方藍色 */
+      margin-left: 10px; /* 與前方元素保留距離 */
     }
   </style>
 </head>
 <body>
 
+  <!-- 頁首區塊，包含宮名與簡介 -->
   <header>
     <h1>覺修宮</h1>
     <p>信眾安身立命的精神依靠</p>
   </header>
 
+  <!-- 導覽列，提供網頁主要導向連結 -->
   <nav>
     <a href="index.html">首頁</a>
     <a href="about.html">關於我們</a>
     <a href="rituals.html">參拜流程</a>
     <a href="news.html">最新消息</a>
     <a href="contact.html">聯絡我們</a>
+    <!-- Facebook 社群連結，點擊會開新分頁 -->
     <a href="https://www.facebook.com/profile.php?id=61560991443501" target="_blank">
       <i class="fab fa-facebook fa-2x social-icon"></i>
     </a>
   </nav>
-
+  
+  <!-- 主內容區塊 -->
   <div class="container">
     <h2>歡迎來到覺修宮</h2>
     <p>本宮秉持傳統信仰，弘揚善道，廣納善緣，護佑眾生。</p>
-
-    <!-- 主殿圖片，高度縮小 -->
-    <img src="images/main-hall.jpg" alt="主殿照片" class="main-img">
-
-<footer>
-  <!-- 宮廟資訊區塊放這裡 -->
-  <div style="padding: 20px; background-color: #fff3e0; border: 1px solid #d7ccc8; text-align: left; max-width: 700px; margin: auto;">
-    <h3>宮廟資訊</h3>
-    <p><strong>宮名：</strong>財團法人 台北市覺修宮</p>
-    <p><strong>地址：</strong>台北市大同區重慶北路三段340號（重慶北路交流道）</p>
-    <p><strong>電話：</strong>(02) 25928042 / (02) 25977463</p>
-    <p><strong>傳真：</strong>(02) 25991856</p>
-    <p><strong>開放時間：</strong>早上6點至晚上9點</p>
-    <p><strong>參訪人數：</strong>1657372</p>
+    <!-- 宮廟主殿圖片 -->
+    <img src="images/main-hall.jpg" alt="主殿照片" width="70%">
   </div>
 
-  <!-- 原本的 footer 標語與社群連結 -->
-  <br>
-  &copy; 2025 覺修宮 All rights reserved.
-  <br>
-  <a href="https://www.facebook.com/profile.php?id=61560991443501" target="_blank">
-    <i class="fab fa-facebook fa-2x social-icon"></i>
-  </a>
-</footer>
-
+  <!-- 頁尾區塊，包含版權聲明與 Facebook 圖示 -->
+  <footer>
+    &copy; 2025 覺修宮 All rights reserved.
+    <br>
+    <a href="https://www.facebook.com/profile.php?id=61560991443501" target="_blank">
+      <i class="fab fa-facebook fa-2x social-icon"></i>
+    </a>
+  </footer>
 
 </body>
 </html>
